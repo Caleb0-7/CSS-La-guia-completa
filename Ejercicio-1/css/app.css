@@ -36,7 +36,7 @@ h3{
 
 img{
    max-width: 100%;
-   display: block;
+   
 }
 
 a{
@@ -58,6 +58,7 @@ a{
     font-weight: 900;
     padding: 1rem;
     transition: background-color .4s ease-out;
+    text-align: center;
 
 }
 
@@ -66,9 +67,16 @@ a{
 
 }
 /*Utilidades*/
-.text-center{
+.contenedor{
     max-width:85rem ;
     margin: 0rem auto;
+}
+.text-center{
+    text-align: center;
+}
+
+.max-width-30{
+    max-width: 30rem;
 }
   /*Header y navegacion*/
 .nombre-sitio{
@@ -324,4 +332,45 @@ a{
      padding-left: 5rem;
 }
 
+/*Blog*/
 
+.contenedor-blog{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+}
+
+.entrada{
+    border-bottom: 2px solid #e1e1e1;
+    padding-bottom: 4rem;
+    margin-bottom: 2rem;
+}
+
+.entrada:last-of-type{
+    border: none;
+}
+
+.entrada-meta{
+    display: flex;
+    justify-content: space-between;
+}
+
+.entrada-meta p{
+    font-weight: 700;
+}
+
+.entrada-meta span{
+    color: #037bc0;
+}
+
+.contenido-entrada-blog{
+    width: 60rem;
+    margin:0 auto;
+}
+
+/*Galeria*/
+
+.galeria{
+    list-style:none;
+
+}
