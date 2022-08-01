@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros</title>
+    <title>Entrada Blog</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Khand&family=Teko&display=swap" rel="stylesheet"> 
-     <link rel="stylesheet" href="css/app.css"> 
+    <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
     <header>
-         <h1 class="nombre-sitio">Tienda <span>Muebles</span></h1>
+        <h1 class="nombre-sitio">Tienda <span>Muebles</span></h1>
     </header>
+
     <div class="contenedor-nav"> 
         <nav class="nav-principal contenedor" >
             <a href="index.html">Inicio</a>
@@ -26,21 +27,35 @@
         </nav>
     </div> <!--Navegador Principal-->
 
-    <main class="nosotros contenedor">
-        <h2>Sobre Nosotros</h2>
-        <div class="nosotros-flex ">
-            <img src="img/nosotros.jpg" alt="imagen nosotros">
-            <div class="nosotros-contenido ">
-                
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, consequuntur perspiciatis
-                     sequi illo voluptatum, molestias aut ipsa molestiae facere asperiores odio id, laudantium doloribus dolor totam labore nesciunt nulla praesentium?</p>
+    <main class="contenido-principal contenedor">
+        <h2 class="text-center">Entrada Blog</h2>
+
+        <article class="entrada contenido-entrada-blog">
+            
+
+            <div class="imagen">
+                <img src="img/nosotros.jpg" alt="imagen blog">
             </div>
-        </div>
+
+            <div class="entrada-meta">
+                <p>Fecha:<span>29 de julio del 2022</span></p>
+                <p>Escrito por:<span>TiendaMuebles</span></p>
+            </div><!--Informacion meta-->
+
+            <div class="entrada-blog">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut blanditiis enim a dolorum magnam. Minima rem itaque amet. Fugiat nihil in veritatis ipsum repellendus pariatur eius, tenetur ea dicta eveniet?</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sunt, pariatur amet velit beatae magni ratione nostrum sequi illo delectus vero ducimus et quia deserunt quidem laborum quas? Repellat, dolor!</p>
+
+            </div><!--Informacion-->
+
+            <a href="entrada.html" class="btn max-width-30">Leer</a>
+
+        </article><!--Entrada de blog -->
     </main>
 
-    <footer class="contenido-principal-contacto ">
-            
-        <div class="listado-contactanos contenedor text-center ">
+    <footer class="contenido-principal-contacto">
+        <div class="listado-contactanos contenedor">
             <div class="texto-contactanos">
                 <h3>Categorias</h3>
                 <nav class="nav-contactanos">
@@ -74,12 +89,8 @@
 
             </div>   
             <p class="parrafo">Todos los derechos reservados, TiendaMuebles</p>
-            
-
         </div>
-        
     </footer>
- 
     
 </body>
 </html>
