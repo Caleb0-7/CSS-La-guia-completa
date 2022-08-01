@@ -42,13 +42,14 @@ img{
 a{
     text-decoration: none;
     color: #000;
+    
 }  
 
 .contenedor{
     
     max-width: 85rem;
     
-    margin: 0rem auto;
+    margin:0 auto;
 }
 .btn{
     background-color: #8cbc00;
@@ -67,12 +68,11 @@ a{
 
 }
 /*Utilidades*/
-.contenedor{
-    max-width:85rem ;
-    margin: 0rem auto;
-}
+
 .text-center{
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .max-width-30{
@@ -372,5 +372,16 @@ a{
 
 .galeria{
     list-style:none;
+    padding: 0;
+    margin:0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
 
+.galeria img{
+    height: 20rem;
+    width: 40rem;
+    
+    object-fit: cover;
 }
