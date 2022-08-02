@@ -31,9 +31,9 @@
 
     <main class="contenido-principal contenedor">
         <h2 class="text-center">Contacto</h2>
-        <form>
+        <form action="">
             <fieldset>
-                <legend>Datos</legend>
+                <legend>Datos</legend><!--Legend se utilizar para especificar y unir de manera visual el tema de una seccion del formulario-->
 
                 <div class="campo">
                     <label for="nombre">Nombre:</label>
@@ -47,8 +47,8 @@
 
                 <div>
                     <label for="email">Email:</label>
-                    <input  id="email" type="email" placeholder="Tu Email">
-                    
+                    <input id="email" type="email" placeholder="Tu Email">
+
                 </div>
 
                 <div>
@@ -59,23 +59,59 @@
                 <div>
                     <label for="tel">Mensaje:</label>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-                    
-                
-
-
-            </fieldset>
+                </div> <!---For y ID se utilizan para mejorar la accesibilida de los dispositivos-->
+            </fieldset><!--Fieldset se utiliza para dividir las secciones de un formulario-->
 
             <fieldset>
-                <legend>Pais</legend>
-            </fieldset>
+                <legend>Pais</legend> <!--Legend se utilizar para especificar y unir de manera visual el tema de una seccion del formulario-->
+                <div class="campo">
+                    <label for="pais">Pais</label>
+                    <select name="" id="pais">
+                        <option value="" disabled>--Seleccione</option> <!--Disabled se usa para deshabilitar una opcion y Selected para decir cual opcion por defecto se va a marcar-->
+                        <option value="MX" selected>Mexico</option>
+                        <option value="CL">Chile</option>
+                        <option value="AR">Argentina</option>
+                        <option value="PR">Peru</option>
+                        <option value="ES">España</option>
+                        <!--Value es la informacion que se envia al servidor la parte backend-->
+                    </select>
+                </div>
+            </fieldset><!--Fieldset se utiliza para dividir las secciones de un formulario-->
 
             <fieldset>
                 <legend>Informacion extra</legend>
+                <div class="campo">
+                    <label for="cliente">Cliente</label>
+                    <input id="cliente" type="radio" name="tipo" value="cliente">
+
+                </div>
+                <div class="campo">
+                    <label for="proveedor">Provedor</label>
+                    <input id="proveedor" type="radio" name="tipo" value="proveedor" >
+                    <!--NAME: se usa para unir dos input radio y asi solo poder seleccionar uno
+                    VALUE: Sera la informacion que se enviara a un servidor la parte backend-->
+
+                </div>
+
+                <div class="campo">
+                    <label for="categoria">Categoria de Interes</label>
+                    <select name="categorias" id="categoria">
+                        <option value="" disabled>--Seleccione</option>
+                        <option value="cocina">Cocina</option>
+                        <option value="cocina">Recamara</option>
+                        <option value="cocina">Oficina</option>
+                        <option value="cocina">Television</option>
+                    </select>
+                </div>
+
+
             </fieldset>
+            <!--Con Checkbox puedes selecionar mas de una opcion y con radio solo puedes seleccionar una-->
+
+            <input type="submit" value="Enviar">
 
 
-        </form>
+        </form> <!--Form especifica que es un formulario-->
     </main>
 
     <footer class="contenido-principal-contacto ">
