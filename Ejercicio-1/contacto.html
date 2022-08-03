@@ -31,13 +31,13 @@
 
     <main class="contenido-principal contenedor">
         <h2 class="text-center">Contacto</h2>
-        <form action="">
+        <form class="formulario">
             <fieldset>
                 <legend>Datos</legend><!--Legend se utilizar para especificar y unir de manera visual el tema de una seccion del formulario-->
 
                 <div class="campo">
                     <label for="nombre">Nombre:</label>
-                    <input id="nombre" type="text" placeholder="Tu Nombre">
+                    <input  id="nombre" type="text" placeholder="Tu Nombre">
                 </div>
 
                 <div class="campo">
@@ -45,18 +45,18 @@
                     <input id="asunto" type="text" placeholder="Tu Asunto">
                 </div>
 
-                <div>
+                <div class="campo">
                     <label for="email">Email:</label>
                     <input id="email" type="email" placeholder="Tu Email">
 
                 </div>
 
-                <div>
+                <div class="campo">
                     <label for="tel">Telefono:</label>
                     <input id="tel" type="tel" placeholder="Tu telefono">
                 </div>
 
-                <div>
+                <div class="campo">
                     <label for="tel">Mensaje:</label>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                 </div> <!---For y ID se utilizan para mejorar la accesibilida de los dispositivos-->
@@ -107,8 +107,11 @@
 
             </fieldset>
             <!--Con Checkbox puedes selecionar mas de una opcion y con radio solo puedes seleccionar una-->
+            <div class="campo-btn">
+                <input class="btn"type="submit" value="Enviar">
 
-            <input type="submit" value="Enviar">
+
+            </div>
 
 
         </form> <!--Form especifica que es un formulario-->
